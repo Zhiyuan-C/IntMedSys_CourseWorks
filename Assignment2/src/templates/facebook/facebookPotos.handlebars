@@ -1,0 +1,9 @@
+<div id="postsContainer">
+  {{#each posts}}
+    <div class="posts">
+      <div class="postTime">{{this.created_time}}</div>
+      <div class="postMessage">{{this.message}}</div>
+      <div class="postPhoto"><img src="{{this.full_picture}}"/></div>
+    </div>
+  {{/each}}
+</div>

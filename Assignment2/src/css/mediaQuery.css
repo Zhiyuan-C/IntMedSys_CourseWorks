@@ -1,0 +1,355 @@
+@media only screen and (max-width: 600px){
+  #headerContent {
+    flex-wrap: wrap;
+  }
+  #searchField {
+    margin-left: 80px;
+  }
+}
+
+
+/*****************************************************************************
+******************************************************************************
+                         Screen width 780 or above
+******************************************************************************
+*****************************************************************************/
+
+@media only screen and (min-width: 768px) {
+  #navBar {
+    width: 35%;
+  }
+}
+
+
+/*****************************************************************************
+******************************************************************************
+                          Screen with width 1024 or above
+******************************************************************************
+*****************************************************************************/
+
+@media only screen and (min-width: 1024px){
+/***************************************************************************
+                                Start page
+****************************************************************************/
+  #startHeading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .contentGroup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sectionTitle {
+    font-size: 2.8rem;
+  }
+  .subsectionTitle {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  #facebookAPIimage {
+    display: none;
+  }
+  #flex-image {
+    display: block;
+  }
+  .flex-funct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .flex-funct .subsection {
+    width: 45%;
+  }
+  .flex-fl {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-dp {
+    margin-top: 40px;
+  }
+  #designPrinciplesImage {
+    float: right;
+    width: 63%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  #simplicity {
+    margin-top: 0;
+  }
+  #subsectionA-FB {
+    margin-top: 0;
+  }
+  #subsectionA-FL {
+    width: 45%;
+  }
+  #subsectionB-FL {
+    width: 50%;
+  }
+  #flickrApiP {
+    text-align: center;
+  }
+  
+/***************************************************************************
+                                Main content
+****************************************************************************/
+  #headerContent {
+    height: 80px;
+    padding-left: 257px;
+  }
+  #webInfo {
+    position: static;
+    height: auto;
+    padding-left: 80px;
+  }
+  #webInfo img {
+    display: none;
+  }
+  #headerTransparent {
+    display: none;
+  }
+  #webTitle {
+    margin-top: 40px;
+    position: static;
+    text-align: left;
+  }
+  #mainContent{
+    margin: 0;
+  }
+
+  #showNav {
+    display: none;
+  }
+  
+/***************************************************************************
+                                Navigation
+****************************************************************************/
+  
+  #hideNav {
+    display: none;
+  }
+  #navBar {
+    width: 265px;
+    display: block;
+    border-right: none;
+    padding: 0;
+  }
+  #navContainer {
+    direction: rtl;
+    height: 100%;
+    width: 140%;
+    overflow: auto;
+    padding-left: 20px;
+  }
+  #login button {
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.47);
+  }
+  #login button:hover, #logout button:hover {
+    box-shadow: 0 1px 4px rgba(128, 59, 59, 0.5), 0 0 26px rgba(228, 122, 122, 0.23) inset;
+  }
+  #logout {
+    height: 50px;
+    margin: auto;
+    margin-top: 56px;
+    margin-right: 136px;
+    width: 246px;
+  }
+  #logout button {
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.76);
+  }
+  
+  #userInfo {
+    position: relative;
+    justify-content: unset;
+    direction: ltr;
+    margin-right: 126px;
+  }
+  #userIcon {
+    border: 5px solid rgba(255, 255, 255, 0.76);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0;
+    z-index: 1;
+  }
+  #userIcon img {
+    height: auto;
+    border-radius: unset;
+  }
+  #userInfo h3 {
+    position: absolute;
+    width: 78%;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding-left: 36px;
+    left: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.02rem;
+  }
+  
+  #navigation {
+    direction: rtl;
+    text-align: left;
+    /* width: 263px; */
+    margin-right: 126px;
+  }
+  
+  #navCategories {
+    font-size: 1rem;
+  }
+  
+  #flickrNav {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+  }
+  #flickrNav ul, #fbNav ul {
+    border: none;
+    
+    border-left: 5px solid #561b00;
+    transition: transform 1s;
+  }
+  #flickrNav ul li, #fbNav ul li {
+    background-color: rgba(255,255,255, 0.76);
+    padding-left: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 5px -5px #561b00;
+  }
+  #flickrNav ul:hover, #fbNav ul:hover {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    box-shadow: 0 5px 5px -5px #561b00;
+  }
+
+/***************************************************************************
+                              Content container
+****************************************************************************/
+
+  #secondSection {
+    margin-left: 257px;
+    padding: 10px 80px;
+  }
+  #title {
+    padding-top: 15px;
+  }
+  #flikerPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .figure {
+    width: 49%;
+    height: 200px;
+    overflow: hidden;
+  }
+  .figInfo {
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+  }
+  .flickrUserIcon {
+    width: 30px;
+  }
+  figcaption {
+    margin: 0;
+    width: 75%;
+  }
+  
+/***************************************************************************
+                                Recently Reviewed
+****************************************************************************/
+  
+  #recentRev {
+    margin-left: 257px;
+    padding-left: 21px;
+    padding-bottom: 10px;
+  }
+  #recentRevTemplate {
+    justify-content: center;
+  }
+  .recentThumb {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+  }
+  
+}
+
+/*****************************************************************************
+******************************************************************************
+                          Screen with width 1362 or above
+******************************************************************************
+*****************************************************************************/
+
+@media only screen and (min-width: 1362px) {
+/***************************************************************************
+                                Start page
+****************************************************************************/
+  #startHeading {
+    padding-left: 80px;
+  }
+  #startTitle {
+    font-size: 3rem;
+  }
+  .sectionTitle {
+        margin-bottom: 60px;
+  }
+  .contentGroup {
+        padding: 0 10%;
+  }
+  .contentGroup p {
+    font-size: 1.3rem;
+  }
+  .flex-funct {
+        margin-top: 43px;
+  }
+  #subsectionA-FB {
+    margin-bottom: 62px;
+  }
+  .flex-fl {
+    margin-top: 15px;
+  }
+  .flex-funct .subsection {
+    width: 58%;
+  }
+  .subsectionTitle {
+    font-size: 1.8rem;
+  }
+  #flickrApi .contentGroup .sectionTitle {
+    margin-bottom: 5px;
+  }
+  #flickrApiP {
+    margin-bottom: 60px;
+  }
+  #flickrApiB, #flickrApiA {
+    margin-bottom: 50px;
+  }
+  .flex-dp {
+    margin: 0;
+  }
+  #designPrinciplesImage {
+    margin: 0;
+    width: 50%;
+    margin-left: 74px;
+  }
+  #bottomButton {
+    height: 100px;
+    width: 540px;
+    font-size: 3rem;
+  }
+  .figure {
+    width: 32%;
+    height: 210px;
+    overflow: hidden;
+  }
+}

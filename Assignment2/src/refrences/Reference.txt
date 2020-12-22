@@ -1,0 +1,32 @@
+Reference site
+Following reference site have been used:
+
+W3Schools Online Web Tutorials
+https://www.w3schools.com/
+
+CSS-Tricks
+https://css-tricks.com/
+
+jquery
+http://api.jquery.com/
+
+Flickr
+https://www.flickr.com/services/api/
+
+Facebook
+facebook graph api post not
+
+Random text generator
+http://www.randomtext.me/
+
+Navigation background image
+https://www.pexels.com/photo/board-bread-breakfast-bunch-349610/
+
+Facebook test user profile
+http://www.designskilz.com/random-users/
+
+Facebook test user photos
+https://www.pexels.com/photo/person-holding-white-peony-bouquet-closeup-photography-1109561/
+https://www.pexels.com/photo/woman-in-purple-sweater-sitting-on-wooden-floor-with-view-of-lake-and-mountains-789382/
+https://www.pexels.com/photo/photograph-of-chocolate-cupcake-with-red-strawberry-toppings-1055272/
+https://www.pexels.com/photo/woman-in-snow-field-744485/

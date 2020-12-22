@@ -1,0 +1,13 @@
+<div id="flikerPhotos">
+  {{#each fkPhotos}}
+    <figure class="figure">
+      <div class="imgContainer" modalUrl="{{this.modalUrl}}" recentThumb="{{this.recentThumb}}" modalOwIcon="{{this.ownerSrc}}" modalCaption="{{this.figTitle}}" modalProfile="{{this.ownerUrl}}">
+        <img src="{{this.figSrc}}" alt="" />
+      </div>
+      <div class="figInfo">
+        <a href="{{this.ownerUrl}}" target="_blank"><img class="flickrUserIcon" src="{{this.ownerSrc}}" alt="" /></a>
+        <figcaption>{{this.figTitle}}</figcaption>
+      </div>
+    </figure>
+  {{/each}}
+</div>

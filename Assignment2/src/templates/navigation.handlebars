@@ -1,0 +1,20 @@
+<!-- Navigation categories -->
+<div id="navCategories">
+  <div id="flickrNav">
+    {{#if haveData}}
+      {{#each categoryNames}}
+        <ul class="navCategory">
+          <li class="navCategoryName">{{this.name}}</li>
+        </ul>
+      {{/each}}
+    {{/if}}
+  </div>
+  <div id="fbNav">
+    <ul>
+      <li id="fbPosts" class="facebookCategory">Facebook Posts</li>
+    </ul>
+  </div>
+
+</div> <!--navCategories end-->
+
+

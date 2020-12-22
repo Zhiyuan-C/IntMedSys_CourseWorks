@@ -1,0 +1,115 @@
+<!-- When page first load, show this page -->
+
+<!-- Header -->
+<div id="startHeading">
+  <h1 id="startTitle">Amefito faucibusa</h1>
+  <button class="getStart" id="topButton">Get started</button>
+</div>
+<!-- Content -->
+<div id="startContent">
+  
+  <div id="intro">
+    <div class="contentGroup">
+      <h2>Welcome to Amefito faucibusa</h2>
+      <p>Flickr API & Facebook API, see the outcome of combining just a few of them can produce.</p>
+    </div>
+    
+  </div>
+  
+  <div id="functionality" class="startContentContainer">
+    
+    <div class="contentGroup">
+      <h2 class="sectionTitle">Facebook API, User Authentications</h2>
+      <p>The primary function of this website is using facebook API's to retrieve user data,  then combined with Flikr APIs to process them and display relevant content on the site.</p>
+    
+      <div class="flex-funct">
+        
+        <div class="subsection">
+          <div id="subsectionA-FB">
+            <h4 class="subsectionTitle">User Authentications</h4>
+            <p>When user login to facebook from this site, Facebook will ask user's permission to access the data. By grant permissions, the website then can retrieve data.</p>
+            <p>Facebook will ask the permission to share your facebook name, <a href="https://developers.facebook.com/docs/graph-api/reference/user/picture/" target="_blank">profile picture</a>, <a href="https://developers.facebook.com/docs/graph-api/reference/v3.0/post" target="_blank">posts</a> and the information of <a href="https://developers.facebook.com/docs/graph-api/reference/user/likes/" target="_blank">pages you liked</a> with this website to display them.</p>
+          </div>
+          
+          <div id="subsectionB-FB">
+            <h4 class="subsectionTitle">Facebook API</h4>
+            <div id="facebookAPIimage"><img src="{{fbApi}}" /></div>
+            <p>The data from user likes is the primary source of how to complete Flickr API. A user will have user likes whenever they liked any pages on the facebook. Then the page name will be retrieved, and act as the keyword to perform Flickr photo search.</p>
+          </div>
+          
+        </div>
+        
+        <div id="flex-image"><img src="{{fbApi}}" /></div>
+        
+      </div>
+      
+      <p>See the detailed info about <a href="https://developers.facebook.com/docs/graph-api" target="_blank">Facebook graph API</a></p>
+    </div>
+  </div>
+  
+  <div id="flickrApi" class="startContentContainer">
+    <div class="contentGroup">
+      
+      <h2 class="sectionTitle">Flikr APIs</h2>
+      <p id="flickrApiP"><a href="https://www.flickr.com/services/api/flickr.photos.search.html" target="_blank">flickr.photos.search</a>, <a href="https://www.flickr.com/services/api/flickr.photos.getSizes.html" target="_blank">flickr.photos.getSizes</a>, <a href="https://www.flickr.com/services/api/flickr.people.getInfo.html" target="_blank">flickr.people.getInfo</a></p>
+      
+      <div class="subsection flex-fl">
+        
+        <div id="subsectionA-FL">
+          <h4 class="subsectionTitle">flickr.photos.search</h4>
+          <div id="flickrApiB"><img src="{{flickrApiB}}"/></div>
+          <p>The data retrieved from Facebook user_likes acts as the search keyword, it then passed with <a href="https://www.flickr.com/services/api/flickr.photos.search.html" target="_blank">flickr.photos.search</a> API to make the search request. Flikr returns photo IDs, Flikr user IDs and the title of the photo if any of the photo title or tag contain the keyword.</p>
+        </div>
+        
+        <div id="subsectionB-FL">
+          <h4 class="subsectionTitle">flickr.photos.getSizes, flickr.people.getInfo</h4>
+          <div id="flickrApiA"><img src="{{flickrApiA}}"/></div>
+          <p>The photo IDs are used with <a href="https://www.flickr.com/services/api/flickr.photos.getSizes.html" target="_blank">flickr.photos.getSizes</a> to get the links of different sized photos. The user IDs on other hands are used with <a href="https://www.flickr.com/services/api/flickr.people.getInfo.html" target="_blank">flickr.people.getInfo</a> API to retrieve user data such other their profile picture and profile link.</p>
+          <p>Finally, the website can display both the Flickr photos and Flickr user info.</p>
+        </div>
+        
+      </div>
+      
+      <p>See detailed <a href="https://www.flickr.com/services/api/" target="_blank">Flickr APIs</a></p>
+    </div>
+  </div>
+  
+  <div id="designPrinciples" class="startContentContainer">
+    
+    <div class="contentGroup">
+      <h2 class="sectionTitle">Design principles</h2>
+      <div class="flex-dp">
+        
+        <div id="designPrinciplesImage">
+          <img src="{{desktop}}" />
+        </div>
+        
+        <div class="subsection">
+          
+          <div id="simplicity">
+            <h4 class="subsectionTitle">Simplicity</h4>
+            <p>This website design aims to keep everything simple so that it can provide a clear purpose of this site to the reader.</p>
+            <p>By having difference effect on the elements, such as mouse hover, sliding navigation, which makes this website not very complicated but at the same time not overly simple.</p>
+          </div>
+          
+          <div id="whiteSpace">
+            <h4 class="subsectionTitle">White Space</h4>
+            <p>The white spaces between each element not only provide a room for the reader's eye to breathe but also distinguish between elements, which keep the reader on track of their viewing direction.</p>
+          </div>
+          
+          <div id="contrast">
+            <h4 class="subsectionTitle">Contrast</h4>
+            <p>Contrast is another crucial design point that is very important to the site. The contrast makes text readable and helps with the element's differentiation.</p>
+            <p>Since this website is focused on to display photos, therefore adding too many colours to other elements can reduce the overall contrast.</p>
+            <p>A background image is added to help differentiate them from the main content, and a beautiful white translucent colour is added on top of images, and down below the text to make the text readable while having an elegant display.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <button class="getStart" id="bottomButton">Get started</button>
+  
+</div>
