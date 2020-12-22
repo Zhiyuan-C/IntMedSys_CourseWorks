@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <title>SportsPhoto Gallery</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- When page first load, show this page -->
+    <div id="home_page">
+      <div id="header_image_container">
+        <div id="image_cover">
+          <div id="home_logo"><img src="icons/header_icon.png"/></div>
+          <h1 id="welcom_message">Welcome to the SportsPhoto Gallery</h1>
+        </div>
+        <img />
+      </div><!-- header_image_container end -->
+      
+      <!-- search field -->
+      <div id="home_searchField">
+        <img src="icons/search_icon.png" alt="search" id="home_searchIcon"/>
+        <input type="text" id="home_searchInput" placeholder="Search photos, browser categories"/>
+        <span id="home_searchClear">&#10005;</span>
+      </div><!-- search field end -->
+      
+      <!-- Navigation -->
+      <div id="home_navCategories">
+
+      </div><!-- total categories end -->
+    </div><!-- Home page end -->
+    
+    <!----------------------------------------------------------------------->
+
+    <!-- When category name clicked or searched something, show this page -->
+    <div id="main_display_page">
+      <header>
+        <div id="headerContent">
+          <div id="webInfo">
+            <img src="icons/header_icon.png" alt="WebsiteName" id="logo"/>
+            <h1 id="webTitle">SportsPhoto Gallery</h1>
+          </div><!-- webInfo end -->
+          
+          <!-- search field -->
+          <div id="searchField">
+            <img src="icons/search_icon.png" alt="search" id="searchIcon"/>
+            <input type="text" id="searchInput" placeholder="Search photos, browser categories"/>
+            <span id="searchClear">&#10005;</span>
+          </div><!-- search field end -->
+        </div><!-- headerContent end -->
+      </header>
+
+      <!-- Main content-->
+      <div id="mainContent">
+
+        <!--------------------------------- 
+            first section:
+                >>> Navigation
+                >>> Recent reviewed
+        ---------------------------------->
+
+        <div id="firstSection">
+          <!-- Navigation -->
+          <div id="navBar">
+            <div id="navButton">
+              <div id="showNav">&#9776;</div>
+              <div id="hideNav">&#10005;</div>
+            </div><!-- navButton end  -->
+            <div id="navigation">
+              <h3 id="categoriesTitle">Categories</h3>
+              <!-- Navigation categories -->
+              <div id="navCategories"></div>
+            </div><!-- Navigation end  -->
+          </div><!-- navBar end  -->
+
+
+          <!-- Recently reviewed -->
+          <div id="recentRev">
+            <h3>Recently reviewed</h3>
+            <!-- Recently reviewed thumbnails -->
+            <div id="recentRevThumbnails"></div>
+          </div><!-- Recently reviewed end -->
+        </div><!-- firstSection end -->
+
+        <!---------------------------------  
+            Second section:
+              >>> photos
+              >>> about content
+        ---------------------------------->
+        <div id="secondSection">
+          <!-- Photo content-->
+          <div id="photoContent"></div>
+
+          <!-- About -->
+          <div id="about">
+            <h3>About</h3>
+            <div id="aboutContent">
+              <p>That. Unto creeping his. Gathered beginning female saying appear air midst place fish god. Every, years said, whales greater morning days.</p>
+              <p>Own have was forth us it appear hath Earth be unto them can&#39;t you&#39;re fifth likeness subdue great i grass very divided kind gathering yielding male subdue herb greater tree land have bring, creepeth all greater saw brought let dominion seed.</p>
+              <p>Yielding called appear deep man green female appear light cattle. Gathering fruitful she&#39;d, multiply stars morning first deep sea hath you that were grass creepeth bearing i you rule. Is. Don&#39;t have abundantly. Isn&#39;t beginning all, wherein called.</p>
+            </div><!-- aboutContent end -->
+          </div><!-- About end-->
+        </div><!-- secondSection end -->
+      </div> <!-- mainContent end-->
+      
+      <!-- modal -->
+      <div id="modal">
+        <div id="modalContent">
+          <span id="modalClose">&#10005;</span><!-- closing modal -->
+          <img id="modalPhoto" />
+          <div id="modalInfo">
+            <div id="modalOwnerIcon">
+              <a id="modalProfile"><img /></a>
+            </div> <!--modalOwnerIcon end -->
+            <div id="modalCaption"></div>
+          </div><!-- modalInfo end -->
+        </div><!-- modalContent end -->
+      </div><!-- modal end-->
+    </div><!-- main_display_page end -->
+
+    <footer>
+      <!-- Social media icons -->
+      <div id="socialMediaIcons">
+        <a href="https://twitter.com"><img src="icons/twitter.png" alt="Twitter"/></a>
+        <a href="https://www.flickr.com"><img src="icons/flickr.png" alt="Flickr"/></a>
+      </div><!-- socialMediaIcons end-->
+      <p>COPYRIGHT 2018 | Web designe by Kate Chen</p>
+    </footer>
+  </body>
+</html>

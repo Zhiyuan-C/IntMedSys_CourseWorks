@@ -1,0 +1,131 @@
+@media only screen and (max-width: 600px){
+  #headerContent {
+    flex-wrap: wrap;
+  }
+  #searchField {
+    margin-left: 80px;
+  }
+}
+
+
+/*****************************************************************************
+******************************************************************************
+                         Screen width 780 or above
+******************************************************************************
+*****************************************************************************/
+
+@media only screen and (min-width: 768px) {
+  
+  header {
+    border-bottom: 20px solid rgba(2, 32, 48, 0.82);
+  }
+
+  #firstSection {
+    position: fixed;
+    width: 170px;
+    height: 100%;
+    border-right: 2px solid #022030;
+  }
+  
+  #secondSection {
+    margin-left: 170px;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 100%;
+  }
+  
+  /***************************************************************************
+                                  Navigation
+  ****************************************************************************/
+  #navBar {
+    position: static;
+    width: 100%;
+  }
+  
+  #navButton {
+    display: none;
+  }
+  
+  #navigation {
+    margin-top: 10px;
+    display: block;
+  }
+
+  #navCategories {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  
+  /***************************************************************************
+                                  Recently Reviewed
+  ****************************************************************************/
+  #recentRev {
+    border-bottom: none;
+    padding-top: 0;
+  }
+  
+  #recentRevThumbnails {
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+  }
+  
+  #recentRevThumbnails > figure {
+    margin: 10px 5px;
+  }
+  
+  /***************************************************************************
+                                  Photo Content
+  ****************************************************************************/
+  #photoContent {
+    margin: 0;
+    padding-top: 0;
+  }
+  
+  .mainThumbnails {
+    max-height: none;
+    overflow: visible;
+  }
+  
+  .photoCategoryName {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+/*****************************************************************************
+******************************************************************************
+                          Screen with width 1042 or above
+******************************************************************************
+*****************************************************************************/
+
+@media only screen and (min-width: 1042px){
+  #header_image_container > img {
+    top: -10%;
+  }
+  /*------ Photo Content -------*/
+  #photoContent {
+    margin-right: 200px;
+    border: none;
+    padding-right: 20px;
+  }
+  
+  .photoCategoryName {
+    text-align: left;
+  }
+  
+  /*------- modal --------*/
+  #modalContent {
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  
+  /*------- about --------*/
+  #about {
+    width: 200px;
+    position: fixed;
+    right: 30px;
+    top: 130px;
+  }
+}

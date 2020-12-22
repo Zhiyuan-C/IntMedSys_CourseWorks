@@ -1,0 +1,17 @@
+Reference site
+Following reference site have been used:
+
+W3Schools Online Web Tutorials
+https://www.w3schools.com/
+
+CSS-Tricks
+https://css-tricks.com/
+
+Flickr
+https://www.flickr.com/services/api/
+https://www.flickr.com/services/api/misc.buddyicons.html
+
+Random text generator
+http://www.dummytextgenerator.com/#jump
+
+As well as All the lecture slides, lecture videos.
